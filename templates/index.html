@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+<div class="col-lg-4"> 
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Upload Image
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-Secondary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+</div>
+<div id="final" class="col-lg-3" > </div>
+<div  class="col-lg-5">
+    <h4>Know more about skin cancer types :</h4>
+</div>
+</div>
+{% endblock %}
