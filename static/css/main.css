@@ -30,12 +30,26 @@ input[type="file"] {
     transition: all .4s;
     cursor: pointer;
 }
-
+.data{
+    overflow-y: scroll;
+}
+h2{
+    font-size: medium;
+    color: #34495E;
+}
+h3{
+    color: #34495E;
+    font-size: large;
+    font-weight: 500;
+}
+p{
+    color: #39D2B4;
+    font-weight: 500;
+}
 .upload-label:hover{
     background: #34495E;
     color: #39D2B4;
 }
-
 .loader {
     border: 8px solid #f3f3f3; /* Light grey */
     border-top: 8px solid #3498db; /* Blue */
